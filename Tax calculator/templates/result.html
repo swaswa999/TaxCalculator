@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Tax Calculator - Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        <p>Amount: ${{ amount }}</p>
+        <p>Tax Rate: {{ tax_rate }}%</p>
+        <p>Total Amount with Tax: ${{ total_amount }}</p>
+    </div>
+</body>
+</html>

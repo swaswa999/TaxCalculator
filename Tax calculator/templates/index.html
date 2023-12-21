@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Tax Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+        <form action="{{ url_for('calculate') }}" method="post">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" name="amount" id="amount" required>
+            <label for="tax_rate">Enter Tax Rate (%):</label>
+            <input type="number" name="tax_rate" id="tax_rate" required>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
